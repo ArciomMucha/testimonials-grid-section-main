@@ -101,18 +101,36 @@ body {
   border: 2px hsl(263, 55%, 52%) solid;
 }
 
-@media (max-width: 375px) {
-  body {
-    background-color: hsl(214, 17%, 92%);
-  }
+@media (max-width: 768px) {
   .grid-container .grid-body {
     grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
   }
   .grid-container .grid-body .grid-item {
     grid-column: span 1 !important;
     grid-row: span 1 !important;
+    padding: 20px;
+  }
+  .grid-container .grid-body .grid-item .info-title {
+    font-size: 18px;
+  }
+  .grid-container .grid-body .grid-item .info-quote {
+    font-size: 14px;
   }
   .user-quotation__icon {
     display: none;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+  .grid-container .grid-body {
+    padding: 15px;
+    gap: 15px;
+  }
+  .grid-container .grid-body .grid-item {
+    padding: 15px;
   }
 }/*# sourceMappingURL=style.css.map */
