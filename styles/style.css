@@ -1,0 +1,118 @@
+body {
+  display: grid;
+  place-items: center;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+.grid-container {
+  width: 100%;
+  max-width: 1440px;
+}
+.grid-container .grid-body {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 32px;
+}
+.grid-container .grid-body .grid-item {
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 17px 34px 44px 1px rgba(34, 34, 68, 0.35);
+}
+.grid-container .grid-body .grid-item .user-info {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.grid-container .grid-body .grid-item .user-info .user-avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.grid-container .grid-body .grid-item .user-info .user-details {
+  display: flex;
+  flex-direction: column;
+}
+.grid-container .grid-body .grid-item .user-info .user-details .user-name {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.grid-container .grid-body .grid-item .user-info .user-details .user-status {
+  margin: 0;
+  font-size: 0.85rem;
+}
+.grid-container .grid-body .grid-item .info-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 2;
+}
+.grid-container .grid-body .grid-item .info-quote {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+.grid-container .grid-body .item-1 {
+  position: relative;
+  grid-column: span 2;
+  background-color: hsl(263, 55%, 52%);
+  color: white;
+}
+.grid-container .grid-body .item-1 .user-avatar {
+  border: 2px hsl(264, 82%, 80%) solid;
+}
+.grid-container .grid-body .item-1 .user-details {
+  z-index: 2;
+}
+.grid-container .grid-body .item-1 .user-quotation__icon {
+  position: absolute;
+  top: 5px;
+  right: 60px;
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+}
+.grid-container .grid-body .item-2 {
+  background-color: hsl(217, 19%, 35%);
+  color: white;
+}
+.grid-container .grid-body .item-3 {
+  grid-row: span 2;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(217, 19%, 35%);
+}
+.grid-container .grid-body .item-4 {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(217, 19%, 35%);
+}
+.grid-container .grid-body .item-5 {
+  grid-column: span 2;
+  background-color: hsl(219, 29%, 14%);
+  color: hsl(214, 17%, 92%);
+}
+.grid-container .grid-body .item-5 .user-avatar {
+  border: 2px hsl(263, 55%, 52%) solid;
+}
+
+@media (max-width: 375px) {
+  body {
+    background-color: hsl(214, 17%, 92%);
+  }
+  .grid-container .grid-body {
+    grid-template-columns: 1fr;
+  }
+  .grid-container .grid-body .grid-item {
+    grid-column: span 1 !important;
+    grid-row: span 1 !important;
+  }
+  .user-quotation__icon {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
