@@ -118,6 +118,21 @@ body {
   .grid-container .grid-body .grid-item .info-quote {
     font-size: 14px;
   }
+  .item-1 {
+    order: 1;
+  }
+  .item-2 {
+    order: 2;
+  }
+  .item-3 {
+    order: 5;
+  }
+  .item-4 {
+    order: 3;
+  }
+  .item-5 {
+    order: 4;
+  }
   .user-quotation__icon {
     display: none;
   }
@@ -132,5 +147,20 @@ body {
   }
   .grid-container .grid-body .grid-item {
     padding: 15px;
+  }
+  .item-1 {
+    order: 1;
+  }
+  .item-2 {
+    order: 2;
+  }
+  .item-3 {
+    order: 5;
+  }
+  .item-4 {
+    order: 3;
+  }
+  .item-5 {
+    order: 4;
   }
 }/*# sourceMappingURL=style.css.map */
